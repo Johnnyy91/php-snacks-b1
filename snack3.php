@@ -50,11 +50,15 @@ Stampare ogni data con i relativi post.
 
      for($i=0; $i < count($newArray); $i++){
         echo $newArray[$i];
+        echo '<br>';
 
         for($index=0; $index < count($posts[$newArray[$i]]); $index++){
-            echo $posts[$newArray[$i]][$index]['title']; 
+            echo $posts[$newArray[$i]][$index]['title'];
+            echo '<br>';
             echo $posts[$newArray[$i]][$index]['text'];
+            echo '<br>';
             echo $posts[$newArray[$i]][$index]['author'];
+            echo '<br>';
         }
      }
 ?>
